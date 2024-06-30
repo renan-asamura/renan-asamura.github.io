@@ -57,18 +57,6 @@
           }
         </style>
         <script>
-        function enviarEventoGA4(nome, email, idade, telefone, alergias, mensagem) {
-            gtag('event', 'lead_submit', {
-                'event_category': 'Formulário',
-                'event_label': 'Inscrição no Acampamento',
-                'nome': nome,
-                'email': email,
-                'idade': idade,
-                'telefone': telefone,
-                'alergias': alergias,
-                'mensagem': mensagem
-            });
-        }
 
         function mostrarMensagemConfirmacao() {
             document.getElementById('formulario').style.display = 'none';
@@ -84,8 +72,8 @@
         height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <!-- End Google Tag Manager (noscript) -->
         <div class="container">
-            <h2>Formulário de Inscrição no Acampamento 2025</h2>
-            <form id="formulario" action="/submit_form.php" method="post" onsubmit="enviarEventoGA4(); mostrarMensagemConfirmacao();">
+            <h2>Formulário de Inscrição no Acampamento 2024</h2>
+            <form id="formulario" action="https://renan-asamura.github.io/" onsubmit=mostrarMensagemConfirmacao();">
                 <label for="nome">Nome:</label>
                 <input type="text" id="nome" name="nome" required>
 
