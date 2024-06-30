@@ -55,7 +55,27 @@
           input[type="submit"]:hover {
               background-color: #45a049;
           }
-      </style>
+
+        <script>
+        function enviarEventoGA4(nome, email, idade, telefone, alergias, mensagem) {
+            gtag('event', 'lead_submit', {
+                'event_category': 'Formulário',
+                'event_label': 'Inscrição no Acampamento',
+                'nome': nome,
+                'email': email,
+                'idade': idade,
+                'telefone': telefone,
+                'alergias': alergias,
+                'mensagem': mensagem
+            });
+        }
+
+        function mostrarMensagemConfirmacao() {
+            document.getElementById('formulario').style.display = 'none';
+            document.getElementById('mensagem-confirmacao').style.display = 'block';
+        }
+        </script>
+
    </head>
    <body>
       <!-- Google Tag Manager (noscript) -->
@@ -64,7 +84,7 @@
       <!-- End Google Tag Manager (noscript) -->
       <div class="container">
          <h2>Formulário de Inscrição no Acampamento</h2>
-         <form action="/submit_form.php" method="post">
+         <form id="formulario" action="/submit_form.php" method="post" onsubmit="enviarEventoGA4(); mostrarMensagemConfirmacao();">
              <label for="nome">Nome:</label>
              <input type="text" id="nome" name="nome" required>
  
