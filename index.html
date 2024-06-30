@@ -63,30 +63,34 @@
             background-color: #dff0d8;
             border: 1px solid #d0e9c6;
             border-radius: 4px;
-        }
+          }
         </style>
         <script>
+            function mostrarMensagemConfirmacao() {
+                document.getElementById('formulario').style.display = 'none';
+                document.getElementById('mensagem-confirmacao').style.display = 'block';
+            }
 
-        function mostrarMensagemConfirmacao() {
-            document.getElementById('formulario').style.display = 'none';
-            document.getElementById('mensagem-confirmacao').style.display = 'block';
-        }
+            document.getElementById('formulario').addEventListener('submit', function(event) {
+                event.preventDefault(); // Evita o envio padrão do formulário
+                mostrarMensagemConfirmacao();
+            });
 
-        function() {
-            return document.getElementById('nome').value.trim();
-        }
+            function() {
+                return document.getElementById('nome').value.trim();
+            }
         </script>
 
    </head>
 
-    <body>
+   <body>
         <!-- Google Tag Manager (noscript) -->
         <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WMNLVVPT"
         height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <!-- End Google Tag Manager (noscript) -->
         <div class="container">
-            <h2>Formulário de Inscrição no Acampamento 2024</h2>
-            <form id="formulario" action="javascript:void(0);" onsubmit=mostrarMensagemConfirmacao();">
+            <h2>Formulário de Inscrição no Acampamento 2025</h2>
+            <form id="formulario" action="javascript:void(0);">
                 <label for="nome">Nome:</label>
                 <input type="text" id="nome" name="nome" required>
 
