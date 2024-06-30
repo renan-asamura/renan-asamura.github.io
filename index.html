@@ -1,61 +1,59 @@
 <!DOCTYPE html>
-<html lang="pt-BR"></html>
-<html>
-   <head>
-      <!-- Google Tag Manager -->
-      <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-      })(window,document,'script','dataLayer','GTM-WMNLVVPT');</script>
-      <!-- End Google Tag Manager -->
-      
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Inscrição no Acampamento</title>
-      <style>
-          body {
-              font-family: Arial, sans-serif;
-              line-height: 1.6;
-              margin: 0;
-              padding: 20px;
-          }
-          .container {
-              max-width: 600px;
-              margin: 0 auto;
-              background: #f9f9f9;
-              padding: 20px;
-              border-radius: 8px;
-              box-shadow: 0 0 10px rgba(0,0,0,0.1);
-          }
-          h2 {
-              text-align: center;
-              color: #333;
-          }
-          label {
-              font-weight: bold;
-          }
-          input[type="text"], input[type="email"], select {
-              width: 100%;
-              padding: 8px;
-              margin: 5px 0 15px;
-              border: 1px solid #ccc;
-              border-radius: 4px;
-              box-sizing: border-box;
-          }
-          input[type="submit"] {
-              background-color: #4CAF50;
-              color: white;
-              padding: 10px 20px;
-              border: none;
-              border-radius: 4px;
-              cursor: pointer;
-              font-size: 16px;
-          }
-          input[type="submit"]:hover {
-              background-color: #45a049;
-          }
-          .mensagem-confirmacao {
+<html lang="pt-BR">
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-WMNLVVPT');</script>
+        <!-- End Google Tag Manager -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscrição no Acampamento</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        label {
+            font-weight: bold;
+        }
+        input[type="text"], input[type="email"], select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        .mensagem-confirmacao {
             display: none;
             text-align: center;
             margin-top: 20px;
@@ -63,57 +61,49 @@
             background-color: #dff0d8;
             border: 1px solid #d0e9c6;
             border-radius: 4px;
-          }
-        </style>
-        <script>
-            function mostrarMensagemConfirmacao() {
-                document.getElementById('formulario').style.display = 'none';
-                document.getElementById('mensagem-confirmacao').style.display = 'block';
-            }
-
-            document.getElementById('formulario').addEventListener('submit', function(event) {
-                event.preventDefault(); // Evita o envio padrão do formulário
-                mostrarMensagemConfirmacao();
-            });
-
-            function() {
-                return document.getElementById('nome').value.trim();
-            }
-        </script>
-
-   </head>
-
-   <body>
-        <!-- Google Tag Manager (noscript) -->
-        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WMNLVVPT"
+        }
+    </style>
+</head>
+<body>
+     <!-- Google Tag Manager (noscript) -->
+     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WMNLVVPT"
         height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <!-- End Google Tag Manager (noscript) -->
-        <div class="container">
-            <h2>Formulário de Inscrição no Acampamento 2025</h2>
-            <form id="formulario" action="javascript:void(0);">
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" required>
+    <div class="container">
+        <h2>Formulário de Inscrição no Acampamento 2024</h2>
+        <form id="formulario">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
 
-                <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email" required>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
 
-                <label for="idade">Idade:</label>
-                <input type="text" id="idade" name="idade" required>
+            <label for="idade">Idade:</label>
+            <input type="text" id="idade" name="idade" required>
 
-                <label for="telefone">Telefone:</label>
-                <input type="text" id="telefone" name="telefone">
+            <label for="telefone">Telefone:</label>
+            <input type="text" id="telefone" name="telefone">
 
-                <label for="alergias">Alergias (se houver):</label>
-                <input type="text" id="alergias" name="alergias">
+            <label for="alergias">Alergias (se houver):</label>
+            <input type="text" id="alergias" name="alergias">
 
-                <label for="mensagem">Mensagem (opcional):</label>
-                <textarea id="mensagem" name="mensagem" rows="4"></textarea>
+            <label for="mensagem">Mensagem (opcional):</label>
+            <textarea id="mensagem" name="mensagem" rows="4"></textarea>
 
-                <input type="submit" value="Enviar Inscrição">
-            </form>
-            <div id="mensagem-confirmacao" class="mensagem-confirmacao">
-                <p>Obrigado pelo envio!</p>
-            </div>
+            <input type="submit" value="Enviar Inscrição">
+        </form>
+        <div id="mensagem-confirmacao" class="mensagem-confirmacao">
+            <p>Obrigado pelo envio!</p>
         </div>
-    </body>
+    </div>
+
+    <script>
+        document.getElementById('formulario').addEventListener('submit', function(event) {
+            event.preventDefault(); // Evita o envio padrão do formulário
+            document.getElementById('formulario').style.display = 'none'; // Esconde o formulário
+            document.getElementById('mensagem-confirmacao').style.display = 'block'; // Mostra a mensagem de confirmação
+            // Aqui você pode adicionar o código para enviar dados para o GA4 se necessário
+        });
+    </script>
+</body>
 </html>
