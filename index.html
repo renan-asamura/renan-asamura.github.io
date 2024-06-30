@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html lang="pt-BR"></html>
 <html>
    <head>
       <!-- Google Tag Manager -->
@@ -9,64 +10,81 @@
       })(window,document,'script','dataLayer','GTM-WMNLVVPT');</script>
       <!-- End Google Tag Manager -->
       
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title>My First Website</title>
-      <link href="default.css" rel="stylesheet" type="text/css" />
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Inscrição no Acampamento</title>
+      <style>
+          body {
+              font-family: Arial, sans-serif;
+              line-height: 1.6;
+              margin: 0;
+              padding: 20px;
+          }
+          .container {
+              max-width: 600px;
+              margin: 0 auto;
+              background: #f9f9f9;
+              padding: 20px;
+              border-radius: 8px;
+              box-shadow: 0 0 10px rgba(0,0,0,0.1);
+          }
+          h2 {
+              text-align: center;
+              color: #333;
+          }
+          label {
+              font-weight: bold;
+          }
+          input[type="text"], input[type="email"], select {
+              width: 100%;
+              padding: 8px;
+              margin: 5px 0 15px;
+              border: 1px solid #ccc;
+              border-radius: 4px;
+              box-sizing: border-box;
+          }
+          input[type="submit"] {
+              background-color: #4CAF50;
+              color: white;
+              padding: 10px 20px;
+              border: none;
+              border-radius: 4px;
+              cursor: pointer;
+              font-size: 16px;
+          }
+          input[type="submit"]:hover {
+              background-color: #45a049;
+          }
+      </style>
    </head>
    <body>
       <!-- Google Tag Manager (noscript) -->
       <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WMNLVVPT"
       height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <!-- End Google Tag Manager (noscript) -->
-      <div id="menu">
-         <ul>
-            <li class="active"><a href="index.html" accesskey="1">Home</a></li>
-            <li><a href="page2.html" accesskey="2">Page 2</a></li>
-            <li><a href="page3.html" accesskey="3">Page 3</a></li>
-            <li><a href="page4.html" accesskey="4">Page 4</a></li>
-            <li><a href="page5.html" accesskey="5">Page 5</a></li>
-         </ul>
-      </div>
-
-      <div id="header">
-         <h1>My First Website</h1>
-         <h2>An HTML Playground</h2>
-      </div>
-     
-      <div id="wrapper">
-         <form action="https://renan-asamura.github.io/">
-            <label for="fname">First name:</label>
-            <input type="text" id="fname" name="fname" value="First Name"><br>
-            <label for="lname">Last name:</label>
-            <input type="text" id="lname" name="lname" value="Last Name"><br><br>
-            <input type="submit" value="Submit">
+      <div class="container">
+         <h2>Formulário de Inscrição no Acampamento</h2>
+         <form action="/submit_form.php" method="post">
+             <label for="nome">Nome:</label>
+             <input type="text" id="nome" name="nome" required>
+ 
+             <label for="email">E-mail:</label>
+             <input type="email" id="email" name="email" required>
+ 
+             <label for="idade">Idade:</label>
+             <input type="text" id="idade" name="idade" required>
+ 
+             <label for="telefone">Telefone:</label>
+             <input type="text" id="telefone" name="telefone">
+ 
+             <label for="alergias">Alergias (se houver):</label>
+             <input type="text" id="alergias" name="alergias">
+ 
+             <label for="mensagem">Mensagem (opcional):</label>
+             <textarea id="mensagem" name="mensagem" rows="4"></textarea>
+ 
+             <input type="submit" value="Enviar Inscrição">
          </form>
-        <p>
-            <b>Sed efficitur laoreet nisl,</b><br> 
-            <i>ac faucibus velit hendrerit sit amet.</i><br> 
-            <u>Phasellus ac orci eget nisi porta accumsan a eget ex.</u>
-         </p>
-         <hr>
-         <p>
-            Maecenas feugiat iaculis imperdiet. Duis vitae pellentesque 
-            nunc, eget elementum metus. Nulla sollicitudin bibendum nibh, 
-            sit amet semper tortor.
-         </p>
-
-         <a href="https://www.google.com/" target="_blank">Sed in lacus a augue rutrum</a><br><br>
-
-         <a href="page2.html"> 
-            <button style="background-color: rgb(43, 255, 0); color: rgb(0, 0, 0);">Page 2</button>
-         </a> <br><br>
-
-         <a href="page3.html"> 
-            <button style="background-color: rgb(43, 255, 0); color: rgb(0, 0, 0);">Page 3</button>
-         </a> <br><br>
-
-         <img src="https://placeholder.com/600x300.jpg"><br>
-
-         <img src="images/600x400.svg"><br>
-      </div>
+     </div>
     </body>
 </html>
